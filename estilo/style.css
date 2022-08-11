@@ -17,6 +17,13 @@
 
 }
 
+@media (max-width: 570px){
+    .container a{
+        padding: 0px;
+        font-size: 0.8em;
+    }
+}
+
 
 
 *{
@@ -99,7 +106,7 @@ nav > a:hover{
 main{
     background-color: white;
     max-width: 600px;
-    min-width: 280px;
+    min-width: 263px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
