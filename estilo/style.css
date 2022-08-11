@@ -24,14 +24,10 @@
     }
 }
 
-
-
 *{
     margin: 0px;
     padding: 0px;
 }
-
-
 
 /*
 #c5ebd6
@@ -68,6 +64,7 @@ header{
 
    
 }
+
 header > h1{
     color: white;
     font-family: var(--fonte-destaque); 
@@ -77,6 +74,7 @@ header > h1{
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
+
 header  p {
     color: white; 
     max-width: 600px;
@@ -86,11 +84,13 @@ header  p {
     font-size: 1.2em;
     padding-bottom: 30px;
 }
+
 nav{
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.516);
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -98,11 +98,13 @@ nav a {
     font-weight: bold;
     transition-duration: .5s;
 }
+
 nav > a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
     border-radius: 5px;
 }
+
 main{
     background-color: white;
     max-width: 600px;
@@ -114,25 +116,30 @@ main{
     border-radius: 0 0 10px 10px;
     
 }
+
 main  strong{
     color: var(--cor4);
     font-weight: bold;
     
 }
+
 main a {
     background-color: var(--cor1);
     padding: 2px 6px;
     font-weight: bold;
 
 }
+
 main a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
+
 a.externo:after{
     content: '\00A0\1F517';
     font-size: 0.8em;
 }
+
 p{
     margin: 15px 0px;
     text-indent: 30px;   
@@ -140,6 +147,7 @@ p{
     font-size: 1em;
     
    }
+
 main p{
     text-align: justify;
 }
@@ -154,7 +162,6 @@ img.bugdroid{
     display: block;
 }
 
-
 main h1{
     color: var(--cor5);
     font-family: var(--font-android);
@@ -167,6 +174,7 @@ main h2{
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
+
 .video{
    margin: 0px -20px 30px -20px;
    padding: 20px;
@@ -174,14 +182,15 @@ main h2{
     padding-bottom: 57%;
     position: relative;
 }
+
 .video > iframe{
    position: absolute;
    top: 5%;
    left: 6%;
    width: 90%;
-   height: 90%;  
-    
+   height: 90%;     
 }
+
 aside{
     background-color: var(--cor1);
     border-radius: 15px;
@@ -193,16 +202,14 @@ aside > h3{
     background-color: var(--cor4);
     color: white;
     padding: 10px;
-    margin: -10px -10px 0 -10px;
-    
-    
+    margin: -10px -10px 0 -10px; 
+    border-radius: 15px 15px 0 0;  
 }
+
 aside  ul{
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;/*coloca a "bolinha" da lista para dentro*/
-    columns: 2;
-   
-    
+    columns: 2;  
 }
 
 footer{
@@ -210,14 +217,15 @@ footer{
     color: white;
     text-align: center;
     font-size: 0.8em;
-    text-align: center;
-    
+    text-align: center;  
 }
+
 footer >  p > a{
     color:white;
     font-weight: none;
     text-decoration: none;
 }
+
 footer >  p > a:hover{
     text-decoration: underline;
 }
