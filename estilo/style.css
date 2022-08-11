@@ -7,6 +7,18 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
+
+@media (max-width: 600px){
+    
+   .container a {
+      
+       font-size: 0.8em;
+    }
+
+}
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -191,7 +203,7 @@ footer{
     color: white;
     text-align: center;
     font-size: 0.8em;
-    text-align: ;
+    text-align: center;
     
 }
 footer >  p > a{
@@ -202,3 +214,4 @@ footer >  p > a{
 footer >  p > a:hover{
     text-decoration: underline;
 }
+  
