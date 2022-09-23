@@ -1,16 +1,18 @@
 function Calcular(){
-    var valor = window.document.getElementById('valorfgts').value
+    var valor = window.document.getElementById('valorfgts')
     var res = window.document.getElementById('res')
     var percentual = 0.2
-    var  newfgts = (valor*percentual).toFixed[2]
+    var  newfgts = (valor*percentual)
     
 
-    if (valor <= 500){
+    if (valor.value.length == 0){
+        window.alert('Você precisa colocar algum valor no campo')
+    }else if ((valor > 0) && (valor <= 500)){
         window.alert(`Você recebera R$500,00 reais`)
-    }else if ((valor > 500) && (valor < 1000)){
+    }if ((valor > 500) && (valor < 1000)){
         window.alert(`${valor*0.4 + 50} Reais`)
     }if((valor > 1000.01) && (valor <= 5000)){
-        window.alert(`você receberá ${valor*0.3 + 150} Reais`)
+        window.alert(`você receberá ${valor * 0.3 + 150} Reais`)
     }if ((valor > 5000.01) && (valor <= 10000.00 )){
         window.alert(`Você receberá ${valor * 0.2 + 650} Reais`)
         res.innerHTML = `Você tem ${valor * 0.2 + 650}`
@@ -19,7 +21,6 @@ function Calcular(){
     }if((valor > 15000.01) && (valor < 20000)){
         window.alert(`Você receberá ${valor * 0.1 + 1900} Reais`)
     }else if(valor > 20000.01){
-        window.alert(`Você receberá ${valor * 0.05 + 2900} Reais`)
-        
+        window.alert(`Você receberá ${valor * 0.05 + 2900} Reais`) 
     }
 }
