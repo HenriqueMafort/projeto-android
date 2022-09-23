@@ -6,9 +6,11 @@ function Calcular(){
     
     valor.innerHTML = ''
     res.innerHTML = 'Preencha os valores'
-    if(valor.length == 0){
+    if(valor.value.length == (0).value ){
         alert('Preencha os dados para verificar os valores')
-    }else if (valor < 500){
+    } else if(valor == 0){
+        window.alert('valor incorreto, digite o valor corretamente')
+    }if (valor < 500){
         window.alert(`Você não tem direito a saque aniversário`)
     }if (valor > 500 && valor < 1000){
        res.innerHTML = (`Você receberá o valor de R$${(valor*0.4 + 50).toFixed(2)} Reais`)
@@ -25,3 +27,12 @@ function Calcular(){
     }
     
 }
+function Reset(){
+var btn = document.querySelector("#resetar");
+btn.addEventListener("click", function() {
+    
+    location.reload();
+});
+}
+
+

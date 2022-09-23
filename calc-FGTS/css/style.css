@@ -28,27 +28,38 @@ input{
     font-size: 1.5em;
 
 }
-input#valorfgts{
-    display: block;
+
+input{
+    border: 1px solid black;
+
+}
+
+
+input#valorfgts {
     margin: auto;
     width: 300px;
     height: 50px;
     margin-top: 50px;
     border-radius: 8px;
+    display: block;
+   
 }
-input#calcular{
+input#calcular, input#resetar{
     width: 80px;
     height: 50px;
     border-radius: 15px;
-    display: block;
-    position: relative;
     font-size: 1em;
     font-weight: bold;
+    display: inline-block;
+    margin-right: -12px;
+}
+input#resetar{
+    border-radius: 10px;
 }
 
-#calcular:hover{
+#calcular:hover , #resetar:hover{
     background-color: rgb(36, 36, 255);
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: white;
     font-weight: bold;
     transform: translate(0.1);
